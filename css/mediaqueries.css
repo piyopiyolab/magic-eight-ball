@@ -1,0 +1,9 @@
+/*MEDIA QUERIES */
+
+/*######################## MEDIA QUERIES MOBILE######################*/
+
+@media (max-width:768px) {}
+
+/*######################## MEDIA QUERIES TABLET ######################*/
+
+@media (min-width: 769px) and (max-width: 1024px) {}

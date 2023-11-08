@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Magic Eight Ball</title>
+
+    <meta name="description" content="Ask me a question and i'll tell you your futur">
+    <!--#################### STYLESHEET  #################### -->
+    <link rel="stylesheet" href="./css/normalize.css" type="text/css" />
+    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+
+
+</head>
+
+<body class="body-magic-eight-ball">
+
+    <section>
+        <article>
+            <div class="container">
+                <div class="quiz-box">
+                    <form id="question-form">
+                        <h1 class="title eightBall-page">Ask me a question and i'll tell you your futur</h1>
+
+                        <input type="text" id="question-input-box" />
+                        </br>
+                        <div class="flex-center btn-wrapper">
+                            <button type="submit" id="question-submit-button">SUBMIT</button>
+                            <button id="reset" onclick="resetInput" value="Reset form">RESET</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </article>
+
+        <article class="flex-center container">
+            <div class="container">
+                <div class="eightBall-wrapper flex-center">
+                    <div id="eightBall" class="flex-center">
+                        <div id="fortuneTitle"></div>
+                    </div>
+                </div>
+
+            </div>
+        </article>
+    </section>
+
+
+    <script type=" text/javascript " src="./script/script.js"></script>
+
+</body>
+
+</html>

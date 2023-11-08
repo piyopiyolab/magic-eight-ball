@@ -1,0 +1,341 @@
+/*A GARDER UNIQUEMENT LE CODE SUIVANT POUR UTILISER LE REM / 10 : */
+
+/* 1rem = 16px */
+
+:root {
+    /*font-size: 100%;*/
+    /* 16px = 100%*/
+    /* 10px = 62.5%*/
+    /*font-size: 10px;*/
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+
+
+/*Y'a plus qu'a divier par 10*/
+
+/*###################  GENERAL STYLE ###################*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Electrolize');
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+
+body {
+    width: 100%;
+    background-color: black;
+    height: 100vh;
+
+}
+
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+
+.title {
+    font-family: 'Electrolize', cursive;
+    padding: 0 0 0 0;
+    font-size: 60px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+article {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+/*###################  index.html START STYLE ###################*/
+
+#welcome {
+    padding: 10% 10% 12% 10%;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+p {
+    font-family: 'Dosis', sans-serif;
+
+    font-size: 24px;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+
+}
+
+
+
+
+#start_btn {
+    font-family: 'Electrolize';
+    font-size: 2rem;
+    margin: 2rem auto;
+    border: 2px solid #FFFFFF;
+    border-radius: 0;
+    color: #FFFFFF;
+    display: block;
+    width: 15rem;
+    height: 4rem;
+}
+
+#start_btn a {
+    text-decoration: none;
+    color: #fff;
+}
+
+button {
+    user-select: none;
+}
+
+button:hover {
+    outline: none;
+}
+
+button:active {
+    transform: translateY(.4rem);
+}
+
+
+/*###################  magiceightball.html STYLE ###################*/
+
+.body-magic-eight-ball {
+    margin: 0 auto;
+    background-image: url('../img/star-background.jpg');
+    background-size: cover;
+}
+
+
+.eightBall-wrapper {
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+/*Fonction eightBallBackground() nouveau background-position: -993px 0; */
+
+.bgPosition-negative {
+    background-position: -993px 0!important;
+}
+
+
+.quiz-box {
+    border: 3px solid rgba(255, 255, 255, 1);
+    background-color: #000;
+    border-radius: 0px 10%;
+    box-shadow: 0px 0px 13px 2px rgb(0, 0, 0);
+    padding: 0 2rem;
+}
+
+
+
+
+#question-input-box {
+    height: 45px;
+    padding: 0;
+    margin-top: 20px;
+    font: 400 3rem 'Roboto Slab';
+    letter-spacing: 0.025em;
+    border: none;
+    background: transparent;
+    text-align: center;
+    outline: none;
+    border-bottom: solid thin rgba(238, 238, 238, 0.12);
+}
+
+
+
+button {
+    border: none;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    border-radius: 0px 10px;
+    background: transparent;
+    outline: none;
+}
+
+button:hover {
+    cursor: pointer;
+    border: 2px solid #fff;
+    border-radius: 0px 10px;
+}
+
+button:disabled {
+    display: none;
+}
+
+#question-submit-button {
+    font-family: 'Electrolize';
+    font-size: 2rem;
+    margin: 2rem auto;
+    border: 2px solid #FFFFFF;
+    border-radius: 0;
+    color: #FFFFFF;
+    display: block;
+    width: 15rem;
+    height: 4rem;
+}
+
+#question-submit-button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn-wrapper {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.eightBall-page {
+    font-weight: 500;
+    font-size: 3em;
+    color: #fff;
+}
+
+#question-input-box {
+    height: 45px;
+    padding: 0;
+    margin-top: 20px;
+    font: 400 3rem 'Roboto Slab';
+    letter-spacing: 0.025em;
+    border: none;
+    background: transparent;
+    text-align: center;
+    outline: none;
+    border-bottom: solid thin rgba(238, 238, 238, 0.12);
+    color: #fff;
+    font-family: 'Electrolize', cursive;
+}
+
+
+/*EIGHT BALL*/
+
+#eightBall {
+    width: 50rem;
+    height: 50rem;
+    border-radius: 50%;
+    background: black;
+    background: url('https://rawgit.com/johneckert/b9203d9b0205e3d2b012e9f9dea388cc/raw/88e11db0b1c2c9d2167e9e6c55619144e9eeb2d5/8BallV3.svg') repeat-x;
+    background-size: auto 100%;
+    background-position: 11px 0;
+
+    /*Transition     background-position: 100rem 0; pour la fortune*/
+}
+
+
+
+
+#fortuneTile {
+    width: 20rem;
+    height: 20rem;
+    margin: 0 auto;
+    background-position: center;
+    position: relative;
+    left: 10px;
+
+}
+
+#fortuneTitle p {
+    color: #fff;
+}
+
+/*############### Fortune Title Animation #############*/
+
+.text-animation {
+    animation: upsizing 5s, rotation 3s;
+
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(-180deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+
+
+@keyframes upsizing {
+    0% {
+        font-size: .8rem;
+    }
+    100% {
+        font-size: 2.5rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#reset {
+    font-family: 'Electrolize';
+    font-size: 2rem;
+    margin: 2rem auto;
+    border: 2px solid #FFFFFF;
+    border-radius: 0;
+    color: #FFFFFF;
+    display: block;
+    width: 15rem;
+    height: 4rem;
+}
+
+/*DEBUG*/
+
+.border {
+    border-width: 1rem;
+}
+
+.borderR {
+    background-color: red;
+
+}
+
+.borderG {
+    background-color: green;
+
+}
+
+.borderB {
+    background-color: black;
+
+}
